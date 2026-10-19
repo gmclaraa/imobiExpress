@@ -1,11 +1,23 @@
-import React, { Fragment } from 'react';
+
+import { Container, Logo, Menu } from './styles';
+import logo from '../../assets/logo.png';
 
 const Header = () => {
   return (
-    <Fragment>
-      <h2>Logo</h2>
-    </Fragment>
-  )
-}
+    <Container>
+      <Logo>
+        <img src={logo} alt="Logo" />
+      </Logo>
+
+      <Menu>
+        <ul>
+          <li>
+            <span>Cadastro/Login</span>
+          </li>
+        </ul>
+      </Menu>
+    </Container>
+  );
+};
 
 export default Header;
